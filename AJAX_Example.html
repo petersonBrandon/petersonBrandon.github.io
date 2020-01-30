@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>AJAX Example</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="AJAX_Example.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="AJAX_Example.js"></script>
+    </head>
+    <body>
+        <h1>Pet Adoption Search</h1>
+        
+        <form>
+            <div id="animalType">
+                <div>Please Select an Animal Type</div>
+                <select onChange="getInfo()">
+                    <option value="select" id="select">Select</option>
+                    <option value="dog" id="dog">Dog</option>
+                    <option value="cat" id="cat">Cat</option>
+                    <option value="bunny" id="bunny">Bunny</option>
+                    <option value="bird" id="bird">Bird</option>
+                    <option value="hamster" id="hamster">Hamster</option>
+                    <option value="guineaPig" id="guineaPig">Guinea Pig</option>
+                </select>
+                <div id="selectError"></div>
+            </div>
+            <div id="moreInput">
+                <div id="dogInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="dogBreed">German Shephard<br>
+                        <input type="radio" name="dogBreed">Husky<br>
+                        <input type="radio" name="dogBreed">Labrador<br>
+                    </div>
+                </div>
+                <div id="catInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="catBreed">Tabby<br>
+                        <input type="radio" name="catBreed">Bengal<br>
+                        <input type="radio" name="catBreed">Siamese<br>
+                    </div>
+                </div>
+                <div id="bunnyInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="bunnyBreed">Newfoundland Dwarf<br>
+                        <input type="radio" name="bunnyBreed">Flemish Giant<br>
+                        <input type="radio" name="bunnyBreed">Lionhead<br>
+                    </div>
+                </div>
+                <div id="birdInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="birdBreed">Parakeet<br>
+                        <input type="radio" name="birdBreed">Cockatoo<br>
+                        <input type="radio" name="birdBreed">Parrot<br>
+                    </div>
+                </div>
+                <div id="hamsterInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="hamsterBreed">Syrian<br>
+                        <input type="radio" name="hamsterBreed">Dwarf Campbell Russian<br>
+                        <input type="radio" name="hamsterBreed">Dwarf Winter White Russian<br>
+                    </div>
+                </div>
+                <div id="guineaPigInput" style="display: none;">
+                    <div id="breedTitle">Breed:</div>
+                    <div class="breedSec">
+                        <input type="radio" name="guineaPigBreed">Peruvian<br>
+                        <input type="radio" name="guineaPigBreed">Abyssinian<br>
+                        <input type="radio" name="guineaPigBreed">Teddy<br>
+                    </div>
+                </div>
+                <div id="moreInputError"></div>
+            </div>
+            <div id="button">
+                <input type="button" id="enter" value="Click for Pets" onClick="setAnimal()">
+            </div>
+        </form>
+        <div id="petInfoError"></div>
+        <table id="petInfo"></table>
+    </body>
+</html>

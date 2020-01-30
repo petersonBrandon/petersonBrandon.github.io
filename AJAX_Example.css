@@ -1,0 +1,21 @@
+select{
+    margin: 10px;
+}
+
+#moreInput{
+    margin: 10px;
+}
+
+#breedTitle{
+    font-size: 1.5em;
+}
+
+#enter{
+    background-color: lightskyblue;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+table{
+    padding-top: 10px;
+}

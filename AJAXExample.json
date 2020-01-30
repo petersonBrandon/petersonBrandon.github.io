@@ -1,0 +1,114 @@
+[
+    {
+        "animal":"dog",
+        "name":"Spot",
+        "breed":"German Shephard",
+        "weight": 75,
+        "size":"Medium",
+        "price":3000
+    },
+    {
+        "animal":"dog",
+        "name":"Sadie",
+        "breed":"Husky",
+        "weight": 45,
+        "size":"Medium",
+        "price":2250
+    },
+    {
+        "animal":"dog",
+        "name":"Coda",
+        "breed":"Husky",
+        "weight": 50,
+        "size":"Medium",
+        "price":2500
+    },
+    {
+        "animal":"cat",
+        "name":"Duckie",
+        "breed":"Tabby",
+        "weight": 9,
+        "size":"Small",
+        "price": 50
+    },
+    {
+        "animal":"cat",
+        "name":"Lucy",
+        "breed":"Tabby",
+        "weight": 8,
+        "size":"Small",
+        "price": 35
+    },
+    {
+        "animal":"cat",
+        "name":"Lucky",
+        "breed":"Tabby",
+        "weight": 7.5,
+        "size":"Small",
+        "price": 30
+    },
+    {
+        "animal":"bunny",
+        "name":"Willie",
+        "breed":"Newfoundland Dwarf",
+        "weight": 2.5,
+        "size":"Small",
+        "price": 200
+    },
+    {
+        "animal":"bunny",
+        "name":"Fish",
+        "breed":"Lionhead",
+        "weight": 3,
+        "size":"Small",
+        "price": 40
+    },
+    {
+        "animal":"bunny",
+        "name":"Fluffy",
+        "breed":"Lionhead",
+        "weight": 4,
+        "size":"Small",
+        "price": 50
+    },
+    {
+        "animal":"bird",
+        "name":"Tweedle-dee",
+        "breed":"Parakeet",
+        "weight": 0.2,
+        "size":"Extra Small",
+        "price": 25
+    },
+    {
+        "animal":"bird",
+        "name":"Tweedle-dum",
+        "breed":"Parakeet",
+        "weight": 0.5,
+        "size":"Extra Small",
+        "price": 25
+    },
+    {
+        "animal":"bird",
+        "name":"Nigel",
+        "breed":"Cockatoo",
+        "weight": 1.2,
+        "size":"Small",
+        "price": 300
+    },
+    {
+        "animal":"guinea pig",
+        "name":"RJ",
+        "breed":"Teddy",
+        "weight": 2,
+        "size":"Small",
+        "price": 75
+    },
+    {
+        "animal":"guinea pig",
+        "name":"Squeaks",
+        "breed":"Peruvian",
+        "weight": 2.3,
+        "size":"Small",
+        "price": 80
+    }
+]
