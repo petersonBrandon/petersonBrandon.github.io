@@ -259,7 +259,7 @@ function loadDatabase(dog, cat, bunny, bird, hamster, guineaPig, newDog, newCat,
     }
 
     // Specifies the type of request
-    json.open('GET', 'https://petersonbrandon.github.io/CIT261.github.io/AJAXExample.json', true);
+    json.open('GET', 'https://petersonbrandon.github.io/AJAXExample.json', true);
     
     // Send the request
     json.send();
