@@ -1,0 +1,25 @@
+.weatherInfo{
+    display: flex;
+    flex-direction: row;
+    font-size: 1.5em;
+}
+
+.units{
+    padding-left: 10px;
+}
+
+.title{
+    padding-right: 10px;
+}
+
+#weather{
+    background-color: lightgray;
+    border-radius: 10px;;
+    padding: 40px;
+    margin: 10px;
+}
+
+#flexSection{
+    display: flex;
+    flex-direction: row;
+}
