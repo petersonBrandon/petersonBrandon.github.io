@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Repair Ticket Creation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="dom.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="dom.js"></script>
+    </head>
+    <header>
+        <h1>
+            Enter Repair Information
+        </h1>
+    </header>
+    <body>
+        <div id="video">
+            Already submitted information before?
+            <input type="button" value="Click here" onClick="setAccountInfo(false)">
+            <video width="400" controls>
+            <source src="2020-02-12 10-01-16_Trim.mp4" type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video> 
+        </div> 
+        <form>
+            <div class="textIn"><div>First Name</div><input type="text" id="firstName" onChange="checkForm()"></form></div>
+            <div class="textIn"><div>Last Name</div><input type="text" id="lastName" onChange="checkForm()"></form></div>
+            <div class="textIn"><div>Phone Number</div><input type="text" id="phone" onChange="checkForm()"></form></div>
+            <div class="textIn"><div>Email</div><input type="text" id="email" onInput="checkForm()"></form></div>
+            <div class="textIn"><div>Computer Brand</div><input type="text" id="computerName" onInput="checkForm()"></form></div>
+            <div id="button"></div>
+        </form>
+    </body>
+    <div id="account"></div>
+</html>
