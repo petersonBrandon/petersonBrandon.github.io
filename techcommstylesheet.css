@@ -1,0 +1,173 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0;
+}
+
+#infoContainer{
+      display: flex;
+      flex-direction: column;
+}
+
+.faddedBackground{
+    background-color: rgba(173, 173, 173, 0.3);
+    height: 100vh;
+}
+
+#main{
+    background-image: url(IMG_0071.jpg);
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#aboutMe{
+    background-image: url(IMG_0356.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#projects{
+    background-image: url(projects.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#education{
+    background-image: url(byui.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#contact{
+    background-image: url(mail.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#heading{
+    text-align: center;
+    font-size: 10em;
+    color: white;
+    text-shadow: 5px 5px 10px black;
+}
+
+#child{
+    margin: 50vh auto 0;
+    transform: translateY(-50%);
+}
+
+#list{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0;
+}
+
+.headLink{
+    padding: 30px;
+    font-size: 2em;
+}
+
+.mainLink{
+    text-decoration: none;
+    color:white;
+    transition: all 1s ease;
+    text-shadow: 5px 5px 10px black;
+}
+
+ul#list a:hover{
+    font-size: 2.1em;
+    transition: all 1s ease;
+}
+
+.childContainer{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+.subHeading{
+    text-align: center;
+    font-size: 5em;
+    padding-top: 100px;
+    text-shadow: 5px 5px 10px black;
+}
+
+.topLink{
+    text-decoration: none;
+    color: white;
+    font-size: 2em;
+    transition: all 1s ease;
+    text-shadow: 5px 5px 10px black;
+}
+
+div.topLinkSec a:hover{
+    font-size: 3em;
+    transition: all 1s ease;
+}
+
+.a-hidden{
+    text-decoration: none;
+    color: white;
+    transition: all 0.5s ease;
+    padding: 10px;
+}
+
+.li-hidden{
+    
+    width: 118px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ul-hidden{ 
+    display: none;
+    list-style: none;  
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-hidden{
+    background-color: rgba(133, 133, 133, 0.7);
+    position: fixed;
+    border-radius: 0px 15px 15px 0px;
+}
+
+ul.ul-hidden a:hover{
+    background-color: rgba(71, 71, 71, 0.7);
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.5s ease;
+}
+
+.menuIcon{
+    background-color: rgba(196, 196, 196, 0.7);
+    border-radius: 0px 15px 15px 0px;
+    width: 60px;
+    padding: 5px;
+}
+
+.navbar-hidden:hover .ul-hidden{
+    display: block;
+    
+}
+
+.navbar-hidden:hover .menuIcon{
+    background-color: rgba(71, 71, 71, 0.7);
+    border-radius: 0px 15px 15px 0px;
+    transition: all 0.5s ease;
+}
+
+.info{
+    font-size: 2.5em;
+    text-shadow: 5px 5px 10px black;
+}

@@ -1,6 +1,14 @@
 var buttonAdded = false;
 var buttonClicked = 0;
 
+function Person(fName, lName, phone, email, cType){
+    this.firstName = fName;
+    this.lastName = lName;
+    this.phone = phone;
+    this.email = email;
+    this.computerType = cType;
+}
+
 function addButton(){
     buttonClicked = 0;
     var btn = document.createElement("INPUT");
@@ -29,6 +37,8 @@ function checkForm(){
 
 function setAccountInfo(isNewInfo){
    
+    var obj = JSON.parse(localStorage.getItem("person"));
+
     buttonClicked++;
     
     if(isNewInfo == true){
@@ -44,7 +54,7 @@ function setAccountInfo(isNewInfo){
 
         name.setAttribute("id", "name");
 
-        name.innerHTML = localStorage.getItem("firstName") + " " + localStorage.getItem("lastName");
+        name.innerHTML = obj.firstName + " " + obj.lastName;
         document.getElementById("account").appendChild(name);
 
         //Display the Phone
@@ -55,7 +65,7 @@ function setAccountInfo(isNewInfo){
         phone.setAttribute("id", "phoneInfo");
         phone2.setAttribute("class", "info");
 
-        phone2.innerHTML = localStorage.getItem("phone");
+        phone2.innerHTML = obj.phone;
         phone.innerHTML = "Phone Number:";              
         document.getElementById("account").appendChild(phone);
         document.getElementById("phoneInfo").appendChild(phone2);
@@ -68,7 +78,7 @@ function setAccountInfo(isNewInfo){
         email.setAttribute("id", "emailInfo");
         email2.setAttribute("class", "info");
 
-        email2.innerHTML = localStorage.getItem("email");
+        email2.innerHTML = obj.email;
         email.innerHTML = "Email:";              
         document.getElementById("account").appendChild(email);
         document.getElementById("emailInfo").appendChild(email2);
@@ -81,7 +91,7 @@ function setAccountInfo(isNewInfo){
         comp.setAttribute("id", "compInfo");
         comp2.setAttribute("class", "info");
 
-        comp2.innerHTML = localStorage.getItem("computerName");
+        comp2.innerHTML = obj.computerType;
         comp.innerHTML = "Computer:";              
         document.getElementById("account").appendChild(comp);
         document.getElementById("compInfo").appendChild(comp2);
@@ -103,11 +113,13 @@ function submitInfo(){
     var email = document.getElementById("email").value;
     var cName = document.getElementById("computerName").value;
 
-    localStorage.setItem("firstName", fName);
-    localStorage.setItem("lastName", lName);
-    localStorage.setItem("phone", phone);
-    localStorage.setItem("email", email);
-    localStorage.setItem("computerName", cName);
+    var person = new Person(fName, lName, phone, email, cName);
+
+    var json = JSON.stringify(person);
+
+    console.log(json);
+    
+    localStorage.setItem("person", json);
 
     setAccountInfo(true);
 }

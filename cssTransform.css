@@ -1,0 +1,140 @@
+html{
+    background-color: tan;
+}
+
+/*****************/
+/* transform css */
+/*****************/
+
+#transformSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.transformItem{
+    padding: 25px;
+    margin: 10px;
+    border: 5px solid;
+}
+
+/* Section 1 */
+#tSec1{
+    background-color: green;
+    color: yellow;
+}
+
+#tSec1:hover{
+    transform-origin: center;
+    transform: rotate(180deg);
+}
+
+/* Section 2 */
+#tSec2{
+    background-color: blue;
+    color: yellow;
+}
+
+#tSec2:hover{
+    transform-origin: bottom right;
+    transform: translateY(200px);
+}
+
+/* Section 3 */
+#tSec3{
+    background-color: red;
+    color: black;
+}
+
+#tSec3:hover{
+    transform-origin: top left;
+    transform: scaleY(2);
+}
+
+/* Section 4 */
+#tSec4{
+    background-color: purple;
+    color: green;
+}
+
+#tSec4:hover{
+    transform-origin: center;
+    transform: skewX(130deg);
+}
+
+/*****************/
+/* animation css */
+/*****************/
+
+#animationSection{
+    display: flex;
+    flex-direction: row;
+}
+
+.animateItem{
+    padding: 25px;
+    margin: 10px;
+    border: 5px solid;
+}
+
+/* Section 1 */
+@keyframes aSec1 {
+    from {background-color: green;}
+    to {background-color: purple;}
+}
+
+#aSec1{
+    background-color: green;
+    color: yellow;
+    animation-name: aSec1;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Section 2 */
+@keyframes aSec2 {
+    0% {padding-top: 0px; background-color: blue;}
+    25% {padding-top: 25px; background-color: green;}
+    50% {padding-top: 50px; background-color: red;}
+    75% {padding-top: 25px; background-color: green;}
+    100% {padding-top: 0px; background-color: blue;}
+}
+
+#aSec2{
+    background-color: blue;
+    color: yellow;
+    animation-name: aSec2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Section 3 */
+@keyframes aSec3 {
+    0% {padding-left: 0px; background-color: red;}
+    25% {padding-left: 25px; background-color: orange;}
+    50% {padding-left: 50px; background-color: blue;}
+    75% {padding-left: 25px; background-color: orange;}
+    100% {padding-left: 0px; background-color: red;}
+}
+
+#aSec3{
+    background-color: red;
+    color: black;
+    animation-name: aSec3;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+/* Section 4 */
+@keyframes aSec4 {
+    0% {transform-origin: center; background-color: purple;}
+    50% {transform-origin: center; transform: rotate(90deg); background-color: blue;}
+    100% {transform-origin: center; background-color: purple;}
+}
+
+#aSec4{
+    background-color: purple;
+    color: green;
+    animation-name: aSec4;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
