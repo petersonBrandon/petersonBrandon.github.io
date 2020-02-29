@@ -1,0 +1,118 @@
+.navBar{
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(25, 134, 207, 0.6);
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.navBarBtn{
+    padding: 15px;
+    text-decoration: none;
+    color: black;
+    transition-duration: 1s;
+}
+
+.navBarBtn:hover{
+    background-color: aqua;
+    transition-duration: 1s;
+}
+
+.heading{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+    font-size: 3em;
+}
+
+#header{
+    transition-duration: 2s;
+}
+
+h1{
+    margin: 0;
+    padding: 20px;
+    font-size: 3em;
+}
+
+body{
+    margin: 0;
+}
+
+#value{
+    padding-left: 10px;
+    transition-duration: 3s;
+    font-size: 0.1em;
+    opacity: 0;
+}
+
+.purposeBtn{
+    margin: 15px;
+}
+
+/* INFO SECTION */
+
+#about{
+    text-align: center;
+}
+
+#aboutHeading{
+    padding: 15px;
+}
+
+#project{
+    text-align: center;
+}
+
+#projectHeading{
+    padding: 15px;
+}
+
+#contact{
+    text-align: center;
+}
+
+#contactHeading{
+    padding: 15px;
+}
+
+.start{
+    height: 0vh;
+    opacity: 0;
+    font-size: 0em;
+    transition: all 2s;
+}
+
+.about{
+    height: 100vh;
+    opacity: 1;
+    font-size: 2.5em;
+    background-color: rgb(130, 234, 255);
+    transition: all 2s;
+}
+
+.project{
+    height: 100vh;
+    opacity: 1;
+    font-size: 2.5em;
+    background-color:rgb(217, 91, 91);
+    transition: all 2s;
+}
+
+.contact{
+    height: 100vh;
+    opacity: 1;
+    font-size: 2.5em;
+    background-color:rgb(135, 247, 134);
+    transition: all 2s;
+}
+
+@keyframes sectionSpin{
+    0% {background-color: rgb(130, 234, 255);}
+    25% {background-color: red;}
+    50% {background-color: green; transform: translate(0vw, 150vh);}
+    75% {background-color: fuchsia; }
+    100% {background-color: rgb(130, 234, 255); }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Brandon Peterson</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="cssByJS.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="cssByJS.js"></script>
+    </head>
+
+    <header id="header">
+        <h1>Codex Industries</h1>
+        <div class="navBar">
+            <div><a href="#top" class="navBarBtn" onClick="showInfo(1, 'about')">About</a></div>
+            <div><a href="#top" class="navBarBtn" onClick="showInfo(2, 'project')">Projects</a></div>
+            <div><a href="#top" class="navBarBtn" onClick="showInfo(3, 'contact')">Contact</a></div>
+        </div>
+    </header>
+
+    <body onLoad="showInfo(1, 'about')">
+        <div id="about" class="start">
+            <div id="aboutSection">
+                <div id="aboutHeading"></div>
+            
+                <div id="aboutContents">
+                    We are Codex Industries. We work to create the best technology for the best price.<br>
+                    This includes, programming, website making, robotics, and overall electronics.<br>
+                    <a href="#top" onClick="moveText()">Click Here to see what we can do</a>
+                </div>
+            </div>
+        </div>
+        <div id="project" class="start">
+            <div id="projectHeading"></div>
+            
+            <div id="projectContents">
+                <div id="projectVideoBox">
+                    <video width="320" height="240" controls>
+                        <source src="Diceino.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                      <video width="320" height="240" controls>
+                        <source src="IMG_1510.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                      <video width="320" height="240" controls>
+                        <source src="IMG_1684.mp4" type="video/mp4">
+                      Your browser does not support the video tag.
+                      </video>
+                </div>
+            </div>
+        </div>
+        <div id="contact" class="start">
+            <div id="contactHeading"></div>
+            
+            <div id="contactContents">
+                <video width="800" height="500" controls>
+                    <source src="2020-02-29 13-14-13_Trim.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+        </div>
+    </body>
+</html>
