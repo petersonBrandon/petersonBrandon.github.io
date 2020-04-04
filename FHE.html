@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FHE Planner</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="FHE.css" rel="stylesheet" type="text/css" media="screen">
+        <script src="FHE.js"></script>
+    </head>
+
+    <header>
+        <!-- Intro Page -->
+        <div class="firstBackOff" id="firstBack">
+            <div class="firstSecOff" id="firstSec">
+                <h1>Family Home Evening Job Planner</h1>
+                <input type="button" value="Click to Begin" class="startBtnOff" id="startBtn" onClick="goToNext(1)">
+            </div>
+        </div>
+    </header>
+
+    <body onLoad="loadIntro()">
+
+        <!-- Family Info Page -->
+        <div class="familyInfoOff" id="familyInfo">
+            <div class="famInfoOff" id="famInfo">
+                Family Information:
+                <div class="famNameOff" id="famName">
+                    Last Name:
+                    <input type="text" id="fI">
+                </div>
+                <input type="button" value="Click to Go Back" class="famInfoBtnOff" id="famInfoBtn1" onClick="goToNext(0)">
+                <input type="button" value="Click to Continue" class="famInfoBtnOff" id="famInfoBtn2" onClick="goToNext(2)">
+            </div>
+        </div>
+
+        <!-- Opening Hymn Page -->
+        <div class="openingHymnOff" id="openingHymn">
+            <div class="oHymnInfoOff" id="oHymnInfo">
+                Opening Hymn:
+                <div class="oHymnOff" id="oHymn">
+                    Hymn:
+                    <input type="text" id="oH"><br>
+                    <input type="button" value="Click for Idea" id="oHIdeas" onClick="getHymn(1)">
+                    <div id="oHIdeaSec"></div>
+                </div>
+                <input type="button" value="Click to Go Back" class="oHymnInfoBtnOff" id="oHymnInfoBtn1" onClick="goToNext(1)">
+                <input type="button" value="Click to Continue" class="oHymnInfoBtnOff" id="oHymnInfoBtn2" onClick="goToNext(3)">
+            </div>
+        </div>
+
+        <!-- Opening Prayer Page -->
+        <div class="openingPrayerOff" id="openingPrayer">
+            <div class="oPrayerInfoOff" id="oPrayerInfo">
+                Opening Prayer:
+                <div class="oPrayerOff" id="oPrayer">
+                    Prayer:
+                    <input type="text" id="oP">
+                </div>
+                <input type="button" value="Click to Go Back" class="oPrayerInfoBtnOff" id="oPrayerInfoBtn1" onClick="goToNext(2)">
+                <input type="button" value="Click to Continue" class="oPrayerInfoBtnOff" id="oPrayerInfoBtn2" onClick="goToNext(4)">
+            </div>
+        </div>
+
+        <!-- Lesson Page -->
+        <div class="lessonOff" id="lesson">
+            <div class="lessonInfoOff" id="lessonInfo">
+                Lesson:
+                <div class="lessonPOff" id="lessonP">
+                    Topic:
+                    <input type="text" id="l">
+                </div>
+                <input type="button" value="Click to Go Back" class="lessonInfoBtnOff" id="lessonInfoBtn1" onClick="goToNext(3)">
+                <input type="button" value="Click to Continue" class="lessonInfoBtnOff" id="lessonInfoBtn2" onClick="goToNext(5)">
+            </div>
+        </div>
+
+        <!-- Closing Hymn Page -->
+        <div class="closingHymnOff" id="closingHymn">
+            <div class="cHymnInfoOff" id="cHymnInfo">
+                Closing Hymn:
+                <div class="cHymnOff" id="cHymn">
+                    Hymn:
+                    <input type="text" id="cH"><br>
+                    <input type="button" value="Click for Idea" id="oHIdeas" onClick="getHymn(2)">
+                    <div id="cHIdeaSec"></div>
+                </div>
+                <input type="button" value="Click to Go Back" class="cHymnInfoBtnOff" id="cHymnInfoBtn1" onClick="goToNext(4)">
+                <input type="button" value="Click to Continue" class="cHymnInfoBtnOff" id="cHymnInfoBtn2" onClick="goToNext(6)">
+            </div>
+        </div>
+
+        <!-- Closing Prayer Page -->
+        <div class="closingPrayerOff" id="closingPrayer">
+            <div class="cPrayerInfoOff" id="cPrayerInfo">
+                Closing Prayer:
+                <div class="cPrayerOff" id="cPrayer">
+                    Prayer:
+                    <input type="text" id="cP">
+                </div>
+                <input type="button" value="Click to Go Back" class="cPrayerInfoBtnOff" id="cPrayerInfoBtn1" onClick="goToNext(5)">
+                <input type="button" value="Click to Finish" class="cPrayerInfoBtnOff" id="cPrayerInfoBtn2" onClick="goToNext(7)">
+            </div>
+        </div>
+
+        <!-- Final Page -->
+        <div class="finalOff" id="final">
+            <div class="finalInfoOff" id="finalInfo">
+                FHE Summary:
+                <div class="finalPOff" id="finalP">
+                    <div id="nameDiv" class="title">
+                        <div class="inT">Family:</div>
+                        <div id="name" class="in"></div>
+                    </div>
+                    <div id="hymn1Div" class="title">
+                        <div class="inT">Opening Hymn:</div>
+                        <div id="hymn1" class="in"></div>
+                    </div>
+                    <div id="prayer1Div" class="title">
+                        <div class="inT">Opening Prayer:</div>
+                        <div id="prayer1" class="in"></div>
+                    </div>
+                    <div id="lessDiv" class="title">
+                        <div class="inT">Lesson:</div>
+                        <div id="less" class="in"></div>
+                    </div>
+                    <div id="hymn2Div" class="title">
+                        <div class="inT">Closing Hymn:</div>
+                        <div id="hymn2" class="in"></div>
+                    </div>
+                    <div id="prayer2Div" class="title">
+                        <div class="inT">Closing Prayer:</div>
+                        <div id="prayer2" class="in"></div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

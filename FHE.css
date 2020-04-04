@@ -1,0 +1,681 @@
+body{
+    margin: 0;
+}
+
+/*************************************************************
+* Intro Page 
+*************************************************************/
+
+/* Page Active */
+.firstSecOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.firstBackOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.startBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Page Inactive */
+.firstSecOff{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.firstBackOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.startBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/* Button Hover Animation */
+
+@keyframes startBtnAnimation {
+    from {background-color: green;}
+    to   {background-color: red;}
+}
+
+.startBtnOn:hover{
+    animation-name: startBtnAnimation;
+    animation-duration: 2s;
+}
+
+/*************************************************************
+* Family Info Page 
+*************************************************************/
+
+/* Page Active */
+.familyInfoOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.famInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.famNameOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.famInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Family Button Hovers */
+
+@keyframes famBtnAnimation {
+    from {padding: 25px; font-size: 2vh;}
+    to   {padding: 45px; font-size: 2.2vh;}
+}
+
+.famInfoBtnOn:hover {
+    animation-name: famBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.familyInfoOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.famInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.famNameOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.famInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/*************************************************************
+* Opening Hymn Page 
+*************************************************************/
+
+/* Page Active */
+.openingHymnOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oHymnInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oHymnOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oHymnInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Opening Hymn Button Hovers */
+
+@keyframes oHymnBtnAnimation {
+    from {transform: none;}
+    to   {transform: rotate(360deg);}
+}
+
+.oHymnInfoBtnOn:hover {
+    animation-name: oHymnBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.openingHymnOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oHymnInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oHymnOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oHymnInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/* Other Items Withing Page */
+
+#oHIdeas{
+    margin-top: 20px;
+    padding: 15px;
+    font-size: 1.5vh;
+    background-color: red;
+    border-radius: 10px;
+    outline: none;
+}
+
+/*************************************************************
+* Opening Prayer Page 
+*************************************************************/
+
+/* Page Active */
+.openingPrayerOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oPrayerInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oPrayerOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.oPrayerInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Opening Prayer Button Hovers */
+
+@keyframes oPBtnAnimation {
+    0%      {background-color: green; transform: none; padding: 25px;}
+    50%     {background-color: red; transform: rotate(360deg); padding: 45px;}
+    100%    {background-color: green; transform: none; padding: 25px;}
+}
+
+.oPrayerInfoBtnOn:hover {
+    animation-name: oPBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.openingPrayerOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oPrayerInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oPrayerOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.oPrayerInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/*************************************************************
+* Lesson Page 
+*************************************************************/
+
+/* Page Active */
+.lessonOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.lessonInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.lessonPOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.lessonInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Lesson Button Hovers */
+
+@keyframes lessonBtnAnimation {
+    0%      {background-color: green; transform: none; padding: 25px;}
+    33%     {background-color: purple; transform: rotate(-360deg); padding: 45px;}
+    66%     {background-color: purple; transform: rotate(360deg); padding: 15px;}
+    100%    {background-color: green; transform: none; padding: 25px;}
+}
+
+.lessonInfoBtnOn:hover {
+    animation-name: lessonBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.lessonOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.lessonInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.lessonPOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.lessonInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/*************************************************************
+* Closing Hymn Page 
+*************************************************************/
+
+/* Page Active */
+.closingHymnOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cHymnInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cHymnOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cHymnInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Closing Hymn Button Hovers */
+
+@keyframes cHymnBtnAnimation {
+    from {transform: none;}
+    to   {transform: rotate(360deg);}
+}
+
+.cHymnInfoBtnOn:hover {
+    animation-name: cHymnBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.closingHymnOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cHymnInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cHymnOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cHymnInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/*************************************************************
+* Closing Prayer Page 
+*************************************************************/
+
+/* Page Active */
+.closingPrayerOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cPrayerInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cPrayerOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.cPrayerInfoBtnOn{
+    padding: 25px;
+    font-size: 2vh;
+    border-radius: 20px;
+    outline: none;
+    background-color: green;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Closing Prayer Button Hovers */
+
+@keyframes cPBtnAnimation {
+    0%      {background-color: green; transform: none; padding: 25px;}
+    50%     {background-color: red; transform: rotate(360deg); padding: 45px;}
+    100%    {background-color: green; transform: none; padding: 25px;}
+}
+
+.cPrayerInfoBtnOn:hover {
+    animation-name: cPBtnAnimation;
+    animation-duration: 2s;
+}
+
+/* Page Inactive */
+.closingPrayerOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cPrayerInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cPrayerOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.cPrayerInfoBtnOff{
+    padding: 0px;
+    font-size: 0vh;
+    border-radius: 0px;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/*************************************************************
+* Final Page 
+*************************************************************/
+
+/* Page Active */
+.finalOn{
+    height: 100vh;
+    background-color: aqua;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.finalInfoOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    transform: translateY(50%); 
+    font-size: 5vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+.finalPOn{
+    text-align: center;
+    align-content: center;
+    padding: 40px;
+    font-size: 2vh;
+    opacity: 1;
+    transition: all 3s;
+}
+
+/* Page Inactive */
+.finalOff{
+    height: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.finalInfoOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    transform: translateY(50%); 
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+.finalPOff{
+    text-align: center;
+    align-content: center;
+    padding: 0px;
+    font-size: 0vh;
+    opacity: 0;
+    transition: all 3s;
+}
+
+/* Final Page Other */
+
+.title{
+    padding: 10px;
+}
+
+.inT{
+    font-size: 2vh;
+}
+
+.in{
+    font-size: 1.5vh;
+    padding-left: 10px;
+}
